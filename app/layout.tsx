@@ -1,6 +1,7 @@
 import "./globals.css";
-//import Navbar from "@/components/Navbar";
-//import Footer from "@/components/Footer";
+import TopBar from "./components/TopBar";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export const metadata = {
   title: "Deliverance Church Utawala",
@@ -15,9 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* <Navbar /> */}
+        <TopBar />
+        <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
